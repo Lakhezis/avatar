@@ -8,7 +8,7 @@ body {
     font-family: "Goudy Bookletter 1911", serif;
     font-size: 24px;
 /*Pattern*/
-  --s: 79px; /* control the size*/
+  --s: 79px; /* tamaño*/
   --c1: #feffc2;
   --c2: #ffa552;
 
@@ -53,37 +53,72 @@ section {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-
 }
+
+/*FORMULARIO*/
+.contacto {
+    display: flex;
+    max-width: 1000px;
+}
+.imagen-form {
+    width: 50%;
+    background-color: #ffa552;
+    background-position-x: center;
+    background-image: url("../images/fondo_iroh.jpg");  
+    background-repeat: no-repeat;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.contacto-form {
+    width: 50%;
+    text-align: center;
+}
+
+input, textarea {
+    text-align: left;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 70%;
+    border:#ffa552 solid 2px;
+}
+
+input:focus, textarea:focus {
+    background-color: #feffc2;
+}
+
+button {
+    background-color: #ffa552;
+    padding: 5px;
+    border-radius: 10px;
+    font: small-caps bolder 18px "Goudy Bookletter 1911", serif;
+}
+
+/*----------------------------*/
 
 .logo {
     width: 200px;
     padding-top: 5%;
     height: auto;
 }
-
 ul {
     list-style-type: none;
 }
-
 ul li a:hover {
 	font-weight: 800;
     transition: 0.4s;
 }
-
 nav ul {
 	margin-top: 3%;
     display: flex;
     flex-wrap: wrap;
 }
-
 nav ul li {
     position: relative;
     flex: 1;
     text-align: center;
     white-space: normal;
 }
-
 nav ul li a {
 	font-size: 1.2rem;
 	padding-right: 1rem;
