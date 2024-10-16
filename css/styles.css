@@ -3,7 +3,6 @@
 	margin: 0px;
     box-sizing: border-box;
 }
-
 body {
     font-family: "Goudy Bookletter 1911", serif;
     font-size: 24px;
@@ -11,7 +10,6 @@ body {
   --s: 79px; /* tamaño*/
   --c1: #feffc2;
   --c2: #ffa552;
-
   --_s: calc(2*var(--s)) calc(2*var(--s));
   --_g: 35.36% 35.36% at;
   --_c: #0000 66%,var(--c2) 68% 70%,#0000 72%;
@@ -54,48 +52,9 @@ section {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-/*FORMULARIO*/
-.contacto {
-    display: flex;
-    max-width: 1000px;
-}
-.imagen-form {
-    width: 50%;
-    background-color: #ffa552;
-    background-position-x: center;
-    background-image: url("../images/fondo_iroh.jpg");  
-    background-repeat: no-repeat;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.contacto-form {
-    width: 50%;
-    text-align: center;
-}
-
-input, textarea {
-    text-align: left;
-    padding: 5px 0px 5px 0px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    width: 70%;
-    border:#ffa552 solid 2px;
-}
-
-input:focus, textarea:focus {
-    background-color: #feffc2;
-}
-
-button {
-    background-color: #ffa552;
-    padding: 5px;
-    border-radius: 10px;
-    font: small-caps bolder 18px "Goudy Bookletter 1911", serif;
-}
-
 /*----------------------------*/
 
+/* NAVBAR */
 .logo {
     width: 200px;
     padding-top: 5%;
@@ -129,9 +88,9 @@ nav ul li a {
     display: block;
     transition: 0.6s;
 }
-/*------------------------------------*/
-/*Desplegable*/
+/*----------------------------*/
 
+/* DESPLEGABLE */
 nav ul li ul {
     display:none;
     position:absolute;
@@ -141,22 +100,14 @@ nav ul li ul {
     padding:0;
     margin: 0;
 }
-   /* items del menu desplegable */
-   
 nav ul ul li {
     float:none;
     width:150px
 }
-   
-   /* enlaces de los items del menu desplegable */
-   
 nav ul ul a {
     line-height:120%;
     padding:10px 15px;
 }
-   
-   /* items del menu desplegable al pasar el ratón */
-   
 nav ul li:hover ul,
 nav ul li ul:hover {
     display:block;
@@ -167,83 +118,126 @@ a {
 	text-decoration: none;
 	color: #000000;
 }
-
 article {
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: #fff;
+    scroll-margin-top: 120px;
 }
-
+/* PAGINA PRINCIPAL*/
 .portada {
-    padding-bottom: 60px;
+   margin: 60px;
+   padding-bottom: 20px;
 }
 .portadaimg {
     margin-right: 20px;
-    width: 40%;
-    height: auto;
+    margin-top: 10px;
+    width:40dvw;
     float: left;
 }
-
 .elementos {
-    background-color: #fff;
-    border-radius: 10px;
     padding: 5%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.alterna {
-    width: 80%;
-    box-sizing: border-box;
-}
-
-.alterna:nth-child(odd) {
-    align-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    row-gap: 20px;
     text-align: left;
 }
-
-.alterna:nth-child(even) {
-    align-self: flex-end;
-    text-align: right;
+.elementoimg {
+    float: inline-start;
+    padding-right: 30px;
 }
 
 .temporadas {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: justify;
 }
 
 .temporadas div {
     padding: 30px;
     border-radius: 10px;
     background-color: #fff;
-    flex: 1;
-    margin: 0 10px;
+    display: grid;
+}
+.temporadas div img, .temporadas div h4 {
+    justify-self: center;
+}
+/*----------------------------*/
+
+/*TEXTO*/
+h1, h2, h4 {
+    font-variant: small-caps;
+    font-size: 30px;
+}
+h1 {
+    font-size: 40px;
     text-align: center;
 }
-
-.temporadas img {
-    width: 150px;
-    height: auto;
-}
-
-h2 {
-    font-variant: small-caps;
-    padding: 10px;
-}
-
-h4 {
-	font-size: 1.5rem;
-	font-variant: small-caps;
-}
-
 p {
     margin-bottom: 30px;
 }
+/*----------------------------*/
 
+/*FORMULARIO*/
+.contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto div {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.imagenform {
+    width: 40%;
+    background-color: #ffa552;
+    background-position-x: center;
+    background-image: url("../images/fondo_iroh.jpg");  
+    background-repeat: no-repeat;
+    border:#000000 solid 1px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 0;
+
+}
+.contactoform {
+    width: 40%;
+    text-align: center;
+    border:#000000 solid 1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.pieform {
+    background-color: #fff;
+    padding: 20px 0px 10px 20px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+input, textarea {
+    text-align: left;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 70%;
+    border:#ffa552 solid 2px;
+}
+input:focus, textarea:focus {
+    background-color: #feffc2;
+}
+button {
+    background-color: #ffa552;
+    padding: 5px;
+    border-radius: 10px;
+    font: small-caps bolder 18px "Goudy Bookletter 1911", serif;
+}
+
+/*FOOTER*/
 footer {
     flex-direction: column;
     padding: 20px;
@@ -253,31 +247,27 @@ footer {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
 footer div:first-child {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
-
 footer img {
   width: 40px;
   height: auto;
 }
-
 .licencia {
   display: flex;
-  align-items: center; /* Alinea el texto y la imagen verticalmente */
+  align-items: center;
   margin-top: 20px;
 }
-
 .licencia img {
   margin-left: 10px;
   margin-top: -15px;
-  width: 120px; /* Tamaño de la imagen de licencia */
-  vertical-align: middle; /* Alinea la imagen con el texto */
+  width: 120px;
+  vertical-align: middle;
 }
-
+/*----------------------------*/
 
 
 

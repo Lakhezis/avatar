@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Avatar: la leyenda de Aang</title>
   </head>
   <body>
@@ -38,23 +39,28 @@
         </ul>
       </nav>
     </header>
-    <section class="contacto">
-      <article class="imagen-form">
+    <section>
+      <article class="contacto">
+        <div class="imagenform">
+        </div>
+        <div class="contactoform">
+          <form >
+            <h1>Dejanos un mensaje: </h1>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" rows="5"></textarea><br>
+            <button>Enviar</button>
+          </form>
+        </div>
       </article>
-      <article class="contacto-form">
-        <form >
-          <h4>Dejanos un mensaje: </h4>
-          <label for="nombre">Nombre:</label><br>
-          <input type="text" id="nombre" name="nombre"><br>
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email"><br>
-          <label for="mensaje">Mensaje:</label><br>
-          <textarea id="mensaje" rows="5"></textarea><br>
-          <button>Enviar</button>
-        </form>
-      </article>
-      <article class="pie-form"></article>
-  </section>
+      <div class="pieform">
+        <p>☎ +54 11 4443 7466</p>
+        <p>✉ contacto@avatar.com</p>
+      </div>
+    </section>
     <footer>
       <div>
         <img src="images/facebook.png" alt="Facebook">
