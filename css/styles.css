@@ -121,6 +121,17 @@ article {
     background-color: #fff;
     scroll-margin-top: 120px;
 }
+
+/*GALERÍA*/
+.galeria h1 {
+    margin-bottom: 20px;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* PAGINA PRINCIPAL*/
 .portada {
    margin: 60px;
