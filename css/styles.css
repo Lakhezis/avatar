@@ -134,6 +134,7 @@ article {
 /*ESPECIALES*/
 .musica li{
   align-items:center;
+  gap: 10px;
 }
 .musica img {
     border-radius: 50%;
@@ -142,6 +143,7 @@ article {
 .musica img:hover {
     background-color: #ffa552;
 }
+
 
 /*------------------------------------*/
 /* PAGINA PRINCIPAL*/
