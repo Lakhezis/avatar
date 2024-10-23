@@ -26,11 +26,13 @@ body {
     var(--c1);
 /*fin del pattern*/
 }
+span {
+    font-weight: bolder;
+}
 
 .flex {
     display: flex;
 }
-
 header {
 	padding: 0% 5% 1%;
     position: sticky;
@@ -39,14 +41,12 @@ header {
     border-radius: 0px 0px 10px 10px;
     justify-content: space-between;
 }
-
 header, footer {
     background-color: #fff;
     align-items: center;
     width: 90%;
     margin: auto;
 }
-
 section {
 	max-width: 1300px;
 	width: 90%;
@@ -127,11 +127,23 @@ article {
     margin-bottom: 20px;
 }
 .contenedor {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+/*------------------------------------*/
+/*ESPECIALES*/
+.musica li{
+  align-items:center;
+}
+.musica img {
+    border-radius: 50%;
+    transition: 0.6s;
+}
+.musica img:hover {
+    background-color: #ffa552;
+}
 
+/*------------------------------------*/
 /* PAGINA PRINCIPAL*/
 .portada {
    margin: 60px;
@@ -182,13 +194,35 @@ h1 {
     font-size: 40px;
     text-align: center;
 }
+h2 {
+    margin-bottom: 30px;
+}
 p {
     margin-bottom: 30px;
 }
 /*----------------------------*/
 
 /*PERSONAJES*/
-
+.personajes {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.personaje img {
+    height: 454px;
+    width: auto;
+    transition: all 0.8s;
+}
+.personaje img:hover {
+    border: #000 2px solid;
+    height: 424px;
+    width: auto;
+}
+.img-con-texto {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
 /*----------------------------*/
 
 /*FORMULARIO*/
