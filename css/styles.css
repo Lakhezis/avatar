@@ -132,6 +132,10 @@ article {
 }
 /*------------------------------------*/
 /*ESPECIALES*/
+.musica {
+    width: 50%;
+}
+
 .musica li{
   align-items:center;
   gap: 10px;
@@ -144,6 +148,10 @@ article {
     background-color: #ffa552;
 }
 
+aside img {
+    display: block;
+    margin: 60px 0px 50px 0px;
+}
 
 /*------------------------------------*/
 /* PAGINA PRINCIPAL*/
