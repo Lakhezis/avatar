@@ -290,8 +290,15 @@ footer div:first-child {
   justify-content: center;
 }
 footer img {
-  width: 40px;
+  width: 50px;
   height: auto;
+  transition: 0.4s;
+  padding: 3px;
+}
+footer img:hover {
+    background-color: var(--c1);
+    border: var(--c2) solid 3px;
+    border-radius: 50%;
 }
 .licencia {
   align-items: center;
