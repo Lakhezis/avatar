@@ -11,6 +11,10 @@
 body {
     font-family: "Goudy Bookletter 1911", serif;
     font-size: 24px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
 /*Pattern*/
   --s: 79px;
   --_s: calc(2*var(--s)) calc(2*var(--s));
@@ -31,6 +35,9 @@ span {
 }
 .flex {
     display: flex;
+}
+.icon { 
+    display: none; 
 }
 header {
 	padding: 0% 5% 1%;
@@ -209,6 +216,9 @@ p {
 /*----------------------------*/
 
 /*PERSONAJES*/
+#Aang h1 {
+    display: none;
+}
 .personajes {
     flex-wrap: wrap;
     justify-content: center;
@@ -329,9 +339,106 @@ footer.footer-galeria {
 }
 /*----------------------------*/
 
+/*MEDIA QUERIES*/
+@media (max-width: 480px) {
+    header, footer, section, .portada, .elementos, 
+    .temporadas, .logo {
+        max-width: 100%; 
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        align-items: center;
+	    justify-content: space-around;
+	    flex-wrap: wrap;
+	    position: sticky;
+	    top: 0;
+	    z-index: 1;
+    }
+    header div, header a {
+        flex: 1 0 50%;
+    }
+    header nav {
+        flex-basis: 100%;
+    }
+    footer {
+        padding-top: 10px;
+    }
+    h1, h2 {
+        font-size: 20px;
+    }
+     h4, p {
+        margin: 5px;
+        font-size: 14px;
+    }
+    img {
+        max-width: 100%;
+        height: auto; 
+    }
+    .logo {
+        display: block;
+	    padding: 1rem;
+    }
+    .icon { 
+        display: block; 
+    }
+    i {
+        margin-left: 100px;
+    }
+    nav ul, nav ul li{
+        display: none;
+    }
+    nav.responsive ul li ul {
+        display: none;
+    }
+    nav.responsive ul {
+        display: block;
+    }
+    nav.responsive ul li {
+        display: block;
+        text-align: center;
+        margin-left: 210px;
+        padding: 0.5rem;
+    }
+    nav.responsive ul li a {
+        padding-right: 0;
+    }
+    .temporadas, .elementos {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+    }
+    .sec-personajes {
+        display: none;
+    }
+    #Aang h1 {
+        display: block;
+    }
+    .img-con-texto {
+        display: block;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .contactoform {
+        width: 100%;
+        height: auto;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .imagenform {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px 10px 0px 0px;
+        border-right: #000 solid 1px;
+    }
+    .contacto {
+        display: block;
+    }
+    .musica {
+        width: 120%;
+    }
+}
 
 
-
-
+/*----------------------------*/
 
 
