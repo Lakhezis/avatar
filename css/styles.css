@@ -460,8 +460,8 @@ footer.footer-galeria {
     .frases {
         display: block;
     }
-    .frases>img {
-        padding-left: 12%;
+    .frases img {
+        width: 100%;
     }
     .contactoform {
         width: 100%;
