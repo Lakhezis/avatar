@@ -42,20 +42,23 @@
       </nav>
     </header>
     <section>
-      <article class="contacto flex">
-        <div class="imagenform">
-        </div>
-        <div class="contactoform">
-          <form action="">
-            <h1>Dejanos un mensaje: </h1>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Tu mail" required><br>
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea><br>
-            <button type="submit">Enviar</button>
-        </form>
+      <article>
+        <h1>Contacto</h1>
+        <div class="contacto flex">
+          <div class="imagenform">
+          </div>
+          <div class="contactoform">
+            <form action="">
+              <h2>Dejanos un mensaje: </h2>
+              <label for="nombre">Nombre:</label><br>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" placeholder="Tu mail" required><br>
+              <label for="mensaje">Mensaje:</label><br>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea><br>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
       </article>
       <div class="pieform">
@@ -75,15 +78,6 @@
         <img src="images/by-sa.svg" alt="Licencia creative commons de atribución compartir igual" class="licencia">
       </div>
     </footer>
-    <script type="text/javascript">
-      function myFunction() {
-        var x = document.getElementById("menu_bar");
-        if (x.className === "") {
-          x.className += " responsive";
-        } else {
-          x.className = "";
-        }
-      }
-    </script>
+    <script src="js/funciones.js"></script>
   </body>
 </html>
